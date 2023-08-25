@@ -45,6 +45,7 @@ body {
 .center-container {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
   max-width: 1200px;
 }
@@ -56,6 +57,13 @@ body {
   color: #ffa303;
   padding: 10px;
   border-radius: 5px;
+}
+
+@media screen and (max-width: 680px) {
+  .center-container {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 /* Style for the button image */
