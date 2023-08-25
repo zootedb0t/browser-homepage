@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
   </head>
   <body>
     <div class="button-container">
@@ -16,16 +16,14 @@
     </div>
 
     <div class="searchbar">
-      <form>
+      <form autocomplete="off" onsubmit="doSearch(); return false">
         <input
           type="text"
-          name="search-term"
+          name="search"
           id="searchfield"
           placeholder="What's on your mind?"
         />
-        <button onclick="doSearch()">
-          <img src="images/cat.png" alt="wondering-cat" />Web Search
-        </button>
+        <input type="submit" id="submitsearch" value="Web Search" />
       </form>
     </div>
 

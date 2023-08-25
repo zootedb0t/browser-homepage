@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Khand";
-  src: url("../fonts/khand/khand-medium-webfont.woff2") format("woff2");
+  src: url("fonts/khand/khand-medium-webfont.woff2") format("woff2");
 }
 
 body {
@@ -9,7 +9,7 @@ body {
   background-color: #333333;
   margin: 0;
   padding: 0;
-  background-image: url("../images/background/looking_away.png");
+  background-image: url("images/background/looking_away.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-attachment: fixed;
@@ -39,22 +39,23 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 40px;
+  margin: 60px;
 }
 
 .center-container {
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 100%;
   max-width: 1200px;
 }
 
 .column {
   flex: 1;
   margin: 0 10px;
-  background-color: #444444;
+  background-color: rgba(26, 44, 56, 0.6);
   color: #ffa303;
   padding: 10px;
+  border-radius: 5px;
 }
 
 /* Style for the button image */
@@ -66,30 +67,37 @@ body {
 
 /* Search Form Styling */
 .searchbar {
-  text-align: center;
-  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#searchfield {
-  padding: 10px;
-  width: 50%;
-  margin-right: 10px;
-  border-radius: 5px;
+.searchbar form {
+  display: flex;
+  align-items: center;
+  margin: 0;
 }
 
-.searchbar button {
-  background-color: #333333;
-  color: white;
-  padding: 10px;
+.searchbar input[type="text"]:focus {
+  background-color: #ededed;
+}
+
+.searchbar input[type="text"] {
   border: none;
-  border-radius: 5px;
+  padding: 10px;
+  outline: none;
+}
+
+.searchbar input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
   cursor: pointer;
 }
 
-.searchbar img {
-  width: 15px; /* Adjust the image size */
-  height: 15px; /* Adjust the image size */
-  margin-right: 5px; /* Space between image and text */
+#submitsearch:hover {
+  background: #046ad6;
 }
 
 /* Remove styling from Bookmark List */
@@ -102,9 +110,9 @@ li {
 }
 
 /* Transparency of Bookmark */
-div {
-  opacity: 0.96;
-}
+/* .main-container div { */
+/*   opacity: 0.9; */
+/* } */
 
 /* Bookmark Styling */
 a {
