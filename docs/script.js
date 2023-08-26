@@ -6,7 +6,7 @@ function fetchWallpaper() {
   // });
   // const response = await getRandomImage.json();
   // const imageUrl = response.data[0].thumbs.large;
-  var body = document.getElementsByTagName('body')[0];
+  var body = document.getElementsByTagName("body")[0];
   body.style.backgroundImage = "url(https://th.wallhaven.cc/lg/jx/jxy6vp.jpg)";
 }
 

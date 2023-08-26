@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Khand";
   src: url("fonts/khand/khand-medium-webfont.woff2") format("woff2");
+  font-display: swap;
 }
 
 body {
