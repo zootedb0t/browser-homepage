@@ -15,8 +15,8 @@ function doSearch() {
   const searchField = document.getElementById("searchfield");
   const searchTerm = searchField.value.trim();
   if (searchTerm) {
-    // const searchParam = `https://www.google.com/search?q=${searchTerm}`;
-    window.open(`https://www.duckduckgo.com/?q=${searchTerm}`);
+    // window.open(`https://www.duckduckgo.com/?q=${searchTerm}`);
+    window.open(`https://www.librex.me/search.php?q=${searchTerm}`);
   }
   searchField.value = "";
 }
