@@ -98,8 +98,8 @@ body {
 }
 
 .searchbar input[type="submit"] {
-  background-color: #007bff;
-  color: #fff;
+  background-color: #429BFF;
+  color: #000000;
   border: none;
   padding: 10px 15px;
   cursor: pointer;
