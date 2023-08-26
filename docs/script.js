@@ -7,7 +7,7 @@ function fetchWallpaper() {
   // const response = await getRandomImage.json();
   // const imageUrl = response.data[0].thumbs.large;
   var body = document.getElementsByTagName("body")[0];
-  body.style.backgroundImage = "url(https://th.wallhaven.cc/lg/jx/jxy6vp.jpg)";
+  body.style.backgroundImage = "url(https://picsum.photos/1920/1080.webp)";
 }
 
 // Seach function
