@@ -10,10 +10,9 @@ body {
   background-color: #333333;
   margin: 0;
   padding: 0;
-  background-image: url("images/background/aenami_landscape.jxl");
+  background-image: url("images/background/learn.jxl");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-attachment: fixed;
   min-height: 100vh;
 }
 
@@ -36,24 +35,15 @@ body {
 }
 
 /* Three column layout structure */
-.main-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 60px;
-}
-
 .center-container {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 1200px;
+  margin: 30px;
 }
 
 .column {
   flex: 1;
-  margin: 0 10px;
+  margin: 10px;
   background-color: rgba(26, 44, 56, 0.6);
   color: #ffa303;
   padding: 10px;
@@ -62,15 +52,15 @@ body {
 
 @media screen and (max-width: 680px) {
   .center-container {
+    display: flex;
     flex-direction: column;
-    gap: 10px;
   }
 }
 
 /* Style for the button image */
 .button-img {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   margin-right: 5px;
 }
 
@@ -98,7 +88,7 @@ body {
 }
 
 .searchbar input[type="submit"] {
-  background-color: #429BFF;
+  background-color: #429bff;
   color: #000000;
   border: none;
   padding: 10px 15px;
@@ -117,11 +107,6 @@ ul {
 li {
   margin-bottom: 10px;
 }
-
-/* Transparency of Bookmark */
-/* .main-container div { */
-/*   opacity: 0.9; */
-/* } */
 
 /* Bookmark Styling */
 a {
