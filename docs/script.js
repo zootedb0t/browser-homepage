@@ -1,8 +1,14 @@
 // Show random wallpaper from web
 function fetchWallpaper() {
-  var body = document.getElementsByTagName("body")[0];
+  const body = document.getElementsByTagName("body")[0];
   body.style.backgroundImage = "url(https://picsum.photos/1920/1080.webp)";
 }
+
+// Set a random wallpaper from background directory
+(function wallpaper() {
+  let number = Math.floor(Math.random() * 6);
+  document.body.style.backgroundImage = `url('images/background/image${number}.jxl')`;
+})();
 
 // Seach function
 function doSearch() {
