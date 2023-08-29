@@ -5,10 +5,10 @@ function fetchWallpaper() {
 }
 
 // Set a random wallpaper from background directory
-(function wallpaper() {
+document.addEventListener("DOMContentLoaded", function () {
   let number = Math.floor(Math.random() * 6);
   document.body.style.backgroundImage = `url('images/background/image${number}.jxl')`;
-})();
+});
 
 // Seach function
 function doSearch() {
