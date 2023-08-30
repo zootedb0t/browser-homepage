@@ -6,7 +6,7 @@ function fetchWallpaper() {
 
 // Set a random wallpaper from background directory
 document.addEventListener("DOMContentLoaded", function () {
-  let number = Math.floor(Math.random() * 6);
+  let number = Math.floor(Math.random() * 9);
   document.body.style.backgroundImage = `url('images/background/image${number}.jxl')`;
 });
 
@@ -16,7 +16,7 @@ function doSearch() {
   const searchTerm = searchField.value.trim();
   if (searchTerm) {
     // window.open(`https://www.duckduckgo.com/?q=${searchTerm}`);
-    window.open(`https://www.librex.me/search.php?q=${searchTerm}`);
+    window.open(`https://searx.be/search?q=${searchTerm}`);
   }
   searchField.value = "";
 }
