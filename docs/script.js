@@ -1,7 +1,7 @@
 // Show random wallpaper from web
-function fetchWallpaper() {
+function surpriseMe() {
   const body = document.getElementsByTagName("body")[0];
-  body.style.backgroundImage = "url(https://picsum.photos/1920/1080.webp)";
+  body.style.backgroundImage = "url(../imageofday.png)";
 }
 
 // Set a random wallpaper from background directory
