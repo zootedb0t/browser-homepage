@@ -2,21 +2,18 @@ name: Download file from wallhaven
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
   schedule:
     - cron: "0 0 * * *"
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   update:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
       # Setup python
       - name: Setup python
@@ -30,13 +27,12 @@ jobs:
         
       # Run python script
       - name: Run python script
-        run: |
-          python imageofday.py
+        run: python imageofday.py
 
       - name: Commit files
         run: |
           git add .
-          git config --local user.email "actions@github.com"
+          git config --local user.email "action@github.com"
           git config --local user.name "Github Action"
           git commit -m "Today wallpaper" -a || true
       - name: Push image
