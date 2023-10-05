@@ -17,5 +17,5 @@ def get_file_url():
 file_url = get_file_url()
 r = requests.get(file_url)
 
-with open("imageofday.png", "wb") as f:
+with open("docs/images/imageofday.png", "wb") as f:
     f.write(r.content)
