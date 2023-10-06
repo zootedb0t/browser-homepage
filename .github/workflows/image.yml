@@ -4,7 +4,7 @@ name: Download file from wallhaven
 on:
   push:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "2 7,8,9 * * *"
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -24,7 +24,7 @@ jobs:
       # Install python dependencies
       - name: Install dependencies
         run: pip install requests
-        
+
       # Run python script
       - name: Run python script
         run: python imageofday.py
