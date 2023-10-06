@@ -1,6 +1,6 @@
 import requests
 
-APIURL = "https://wallhaven.cc/api/v1/search?q=anime&sorting=hot&atleast=1920x1080"
+APIURL = "https://wallhaven.cc/api/v1/search?q=anime&sorting=random&atleast=1920x1080"
 
 server_response = requests.get(APIURL)
 
