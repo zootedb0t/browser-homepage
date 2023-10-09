@@ -1,3 +1,6 @@
+"""
+Import request module
+"""
 import requests
 
 APIURL = "https://wallhaven.cc/api/v1/search?q=anime&sorting=random&atleast=1920x1080"
