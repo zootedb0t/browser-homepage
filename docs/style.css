@@ -20,7 +20,14 @@ body {
 .button-container {
   display: flex;
   justify-content: flex-end;
-  padding: 20px;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  float: right;
+  cursor: pointer;
+  background-color: rgba(26, 44, 56, 0.5);
+  color: #ffa303;
+  border-radius: 5px;
 }
 
 .custom-button {
@@ -69,6 +76,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  clear: both;
 }
 
 .searchbar form {
