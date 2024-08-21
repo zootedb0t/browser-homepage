@@ -1,13 +1,8 @@
-// Show random wallpaper from web
-var loadWallpaper = document.getElementById("wallpaper");
-loadWallpaper.addEventListener("click", () => {
-  document.body.style.backgroundImage = `url('images/imageofday.png')`;
-});
-
 // Set a random wallpaper from background directory
 document.addEventListener("DOMContentLoaded", () => {
-  let number = Math.floor(Math.random() * 9);
-  document.body.style.backgroundImage = `url('images/background/image${number}.jxl')`;
+  // let number = Math.floor(Math.random() * 9);
+  // document.body.style.backgroundImage = `url('images/background/image${number}.jxl')`;
+  document.body.style.backgroundImage = `url(images/background/image9.png)`;
 });
 
 // Seach function

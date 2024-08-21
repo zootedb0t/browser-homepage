@@ -4,48 +4,30 @@
   font-display: swap;
 }
 
+h1 {
+  text-align: center;
+  color: #4ccd99;
+}
+
 body {
   font-family: "Khand", sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.5em;
   background-color: #333333;
-  margin: 0;
-  padding: 0;
-  /* background-image: url("images/background/image1.jxl"); */
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-/* Top Right Button */
-.button-container {
+.main-container {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 10px;
-  margin: 10px;
-  float: right;
-  cursor: pointer;
-  background-color: rgba(26, 44, 56, 0.5);
-  color: #ffa303;
-  border-radius: 5px;
-}
-
-.custom-button {
-  background-color: #333333;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
+  flex-direction: column;
 }
 
 /* Three column layout structure */
 .center-container {
   display: flex;
   justify-content: space-between;
-  margin: 30px;
 }
 
 .column {
@@ -64,11 +46,8 @@ body {
   }
 }
 
-/* Style for the button image */
-.button-img {
-  width: 24px;
-  height: 24px;
-  margin-right: 5px;
+#zootedb0t {
+  color: #fff455;
 }
 
 /* Search Form Styling */
