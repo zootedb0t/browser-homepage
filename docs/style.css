@@ -1,3 +1,14 @@
+:root {
+  --background: 61, 58, 74;
+  --inchworm: #befa4f;
+  --crystal_blue: #5aa7b9;
+  --english_violet: #513a6b;
+  --burnt-sienna: #ed6d4d;
+  --booger_buster: #e0ee64;
+  --desire: #e93f51;
+  --arsenic: #3d3a4a;
+}
+
 @font-face {
   font-family: "Khand";
   src: url("fonts/khand/khand-medium-webfont.woff2") format("woff2");
@@ -6,13 +17,13 @@
 
 h1 {
   text-align: center;
-  color: #4ccd99;
+  color: var(--crystal_blue);
 }
 
 body {
   font-family: "Khand", sans-serif;
   font-size: 1.5em;
-  background-color: #333333;
+  background-color: rgba(var(--background), 1);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -33,8 +44,8 @@ body {
 .column {
   flex: 1;
   margin: 10px;
-  background-color: rgba(26, 44, 56, 0.6);
-  color: #ffa303;
+  background-color: rgba(var(--background), 0.5);
+  color: var(--booger_buster);
   padding: 10px;
   border-radius: 5px;
 }
@@ -46,14 +57,8 @@ body {
   }
 }
 
-#zootedb0t {
-  color: #fff455;
-}
-
-/* Search Form Styling */
 .searchbar {
   display: flex;
-  align-items: center;
   justify-content: center;
   clear: both;
 }
@@ -64,21 +69,21 @@ body {
   margin: 0;
 }
 
-.searchbar input[type="text"]:focus {
-  background-color: #ededed;
-}
-
-.searchbar input[type="text"] {
+.searchbar form input[type="text"] {
   border: none;
-  padding: 10px;
   outline: none;
+  padding: 10px;
+  font-weight: bold;
+  font-style: italic;
+  color: var(--english_violet);
 }
 
-.searchbar input[type="submit"] {
+.searchbar form input[type="submit"] {
   background-color: #429bff;
   color: #000000;
   border: none;
-  padding: 10px 15px;
+  padding: 10px;
+  font-weight: normal;
   cursor: pointer;
 }
 
@@ -121,4 +126,24 @@ a::before {
 
 a:hover::before {
   transform: scaleX(1);
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.25;
+  }
+}
+
+#blinking {
+  animation: blink 4s linear infinite;
+  font-style: italic;
+  color: var(--inchworm);
 }
