@@ -28,6 +28,8 @@ jobs:
       # Run python script
       - name: Run python script
         run: python imageofday.py
+      - name: Install libjxl
+        run: sudo apt update && sudo apt install -y libjxl-tools
 
       - name: Commit files
         run: |
