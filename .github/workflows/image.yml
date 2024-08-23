@@ -30,6 +30,8 @@ jobs:
         run: python imageofday.py
       - name: Install libjxl
         run: sudo apt update && sudo apt install -y libjxl-tools
+      - name: Convert png to jxl
+        run: cjxl docs/images/background/image9.png /docs/images/background/image9.jxl --quality=100
 
       - name: Commit files
         run: |
