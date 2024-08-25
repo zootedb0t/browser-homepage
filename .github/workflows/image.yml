@@ -29,9 +29,9 @@ jobs:
       - name: Run python script
         run: python imageofday.py
       - name: Install libjxl
-        run: sudo apt update && sudo apt install -y libjxl-tools
+        run: sudo apt update && sudo apt install -y imagemagick
       - name: Convert png to jxl
-        run: cjxl docs/images/background/image9.png /docs/images/background/image9.jxl --quality=100
+        run: magick docs/images/background/image9.png /docs/images/background/image9.jxl && rm docs/images/background/image9.png
 
       - name: Commit files
         run: |
