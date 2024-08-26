@@ -31,7 +31,7 @@ jobs:
       - name: Install libjxl
         run: sudo apt update && sudo apt install -y imagemagick
       - name: Convert png to jxl
-        run: magick docs/images/background/image9.png /docs/images/background/image9.jxl && rm docs/images/background/image9.png
+        run: convert docs/images/background/image9.png /docs/images/background/image9.jxl && rm docs/images/background/image9.png
 
       - name: Commit files
         run: |
