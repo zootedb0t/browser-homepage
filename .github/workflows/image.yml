@@ -4,7 +4,7 @@ name: Download file from wallhaven
 on:
   schedule:
     # Run at 6am everyday
-    - cron: "0 6 * * *"
+    - cron: "0 6 * * 0"
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -26,19 +26,21 @@ jobs:
         run: pip install requests
 
       # Run python script
-      - name: Run python script
+      - name: Download weekly wallpaper
         run: python imageofday.py
-      - name: Install libjxl
+      - name: Install imagemagick
         run: sudo apt update && sudo apt install -y imagemagick
       - name: Convert png to jxl
         run: convert docs/images/background/image9.png docs/images/background/image9.jxl
+      - name: Delete png file
+        run: rm docs/images/background/image9.png
 
       - name: Commit files
         run: |
           git add .
           git config --local user.email "action@github.com"
           git config --local user.name "Github Action"
-          git commit -m "Today wallpaper" -a || true
+          git commit -m "Weekly wallpaper" -a || true
       - name: Push image
         uses: ad-m/github-push-action@master
         with:

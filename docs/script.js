@@ -1,8 +1,7 @@
 // Set a random wallpaper from background directory
 document.addEventListener("DOMContentLoaded", () => {
-  // let number = Math.floor(Math.random() * 9);
-  // document.body.style.backgroundImage = `url('images/background/image${number}.jxl')`;
-  document.body.style.backgroundImage = `url(images/background/image9.png)`;
+  let number = Math.floor(Math.random() * 10);
+  document.body.style.backgroundImage = `url('images/background/image${number}.jxl')`;
 });
 
 // Seach function
