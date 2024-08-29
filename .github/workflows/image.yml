@@ -3,8 +3,8 @@ name: Download file from wallhaven
 # Controls when the workflow will run
 on:
   schedule:
-    # Run at 6am everyday
-    - cron: "0 6 * * *"
+    # Run at 6am everyweek
+    - cron: "0 6 * * 0"
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
