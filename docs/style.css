@@ -57,38 +57,21 @@ body {
   }
 }
 
-.searchbar {
+form {
   display: flex;
   justify-content: center;
   clear: both;
 }
 
-.searchbar form {
-  display: flex;
-  align-items: center;
-  margin: 0;
-}
-
-.searchbar form input[type="text"] {
-  border: none;
-  outline: none;
-  padding: 10px;
+form input[type="text"] {
+  background-color: var(--arsenic);
+  color: #ffe0ae;
   font-weight: bold;
-  font-style: italic;
-  color: var(--english_violet);
-}
-
-.searchbar form input[type="submit"] {
-  background-color: #429bff;
-  color: #000000;
-  border: none;
   padding: 10px;
-  font-weight: normal;
-  cursor: pointer;
-}
-
-#submitsearch:hover {
-  background: #046ad6;
+	width: 400px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
 }
 
 /* Remove styling from Bookmark List */
