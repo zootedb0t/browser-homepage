@@ -10,8 +10,9 @@
 }
 
 @font-face {
-  font-family: "Khand";
-  src: url("fonts/khand/khand-medium-webfont.woff2") format("woff2");
+  /*font-family: "Khand";*/
+  /*src: url("fonts/khand/khand-medium-webfont.woff2") format("woff2");*/
+  font-family: "Silkscreen";
   font-display: swap;
 }
 
@@ -21,7 +22,7 @@ h1 {
 }
 
 body {
-  font-family: "Khand", sans-serif;
+  font-family: "Silkscreen", sans-serif;
   font-size: 1.5em;
   background-color: rgba(var(--background), 1);
   background-repeat: no-repeat;
